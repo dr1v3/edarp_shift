@@ -1,6 +1,6 @@
 object frmMain: TfrmMain
-  Left = 576
-  Top = 129
+  Left = 567
+  Top = 135
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = #1055#1072#1082#1077#1090#1085#1072' '#1079#1072#1084#1110#1085#1072' '#1054'\'#1056
@@ -30,6 +30,7 @@ object frmMain: TfrmMain
       Top = 22
       Width = 24
       Height = 24
+      OnClick = btnSelectDbfClick
       PngImage.Data = {
         89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
         610000026A4944415478DA95525F48535118FFCEBD77F7DEB6E5D0247573A39C
@@ -59,6 +60,7 @@ object frmMain: TfrmMain
       Top = 70
       Width = 24
       Height = 24
+      OnClick = btnSelectReestrClick
       PngImage.Data = {
         89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
         610000026A4944415478DA95525F48535118FFCEBD77F7DEB6E5D0247573A39C
@@ -137,6 +139,7 @@ object frmMain: TfrmMain
     Height = 25
     Caption = #1055#1086#1095#1072#1090#1080' '#1086#1073#1088#1086#1073#1082#1091
     TabOrder = 1
+    OnClick = btnGoClick
     PngImage.Data = {
       89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
       61000002364944415478DAA5914D68134114C7DFCC6E9ADDC4984F12AA392816
@@ -160,6 +163,24 @@ object frmMain: TfrmMain
       DC79C10000000049454E44AE426082}
   end
   object manXP: TXPManifest
+    Top = 176
+  end
+  object dlgOpenDbf: TOpenDialog
+    Filter = 'DBF-'#1092#1072#1081#1083#1080'|*.dbf'
+    Title = #1054#1073#1077#1088#1110#1090#1100' dbf-'#1092#1072#1081#1083', '#1086#1090#1088#1080#1084#1072#1085#1080#1081' '#1074#1110#1076' '#1086#1088#1075#1072#1085#1110#1079#1072#1094#1110#1111' '
+    Left = 224
+    Top = 176
+  end
+  object dlgOpenReestr: TOpenDialog
+    Filter = #1060#1072#1081#1083' REESTRLG.DT|REESTRLG.DT'
+    Title = #1054#1073#1077#1088#1110#1090#1100' '#1092#1072#1081#1083' REESTRLG.DT'
+    Left = 256
+    Top = 176
+  end
+  object dbfMain: TDbf
+    IndexDefs = <>
+    TableLevel = 4
+    Left = 40
     Top = 176
   end
 end
