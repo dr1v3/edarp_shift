@@ -4,16 +4,21 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, XPMan, ExtCtrls, StdCtrls, Buttons, PngSpeedButton, ComCtrls;
+  Dialogs, XPMan, ExtCtrls, StdCtrls, Buttons, PngSpeedButton, ComCtrls,
+  PngBitBtn;
 
 type
   TfrmMain = class(TForm)
-    Panel1: TPanel;
+    pMain: TPanel;
     elDbf: TLabeledEdit;
     elReestr: TLabeledEdit;
-    PngSpeedButton1: TPngSpeedButton;
-    PngSpeedButton2: TPngSpeedButton;
-    ProgressBar1: TProgressBar;
+    btnSelectDbf: TPngSpeedButton;
+    btnSelectReestr: TPngSpeedButton;
+    pbMain: TProgressBar;
+    lblAcc: TLabel;
+    lblAccNo: TLabel;
+    btnGo: TPngBitBtn;
+    manXP: TXPManifest;
   private
     { Private declarations }
   public
