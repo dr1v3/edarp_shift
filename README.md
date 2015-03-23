@@ -1,4 +1,4 @@
-replacerr
+edarp_shift
 =========
 
-Small utility for replace account number in edarp
+a small utility to automatically replace the account number in EDARP
